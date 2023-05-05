@@ -2,7 +2,7 @@ install:
 	pip install --quiet -r requirements.txt
 
 test: install
-	pytest
+	python3 -m unittest discover tests
 
 run: install
-	python3 -m main
+	python3 -m pipeline
